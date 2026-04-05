@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Alejandro Martinez | Resume
 
-## Getting Started
+A single-page resume website built with Next.js (App Router) and styled with Tailwind CSS utility classes. Designed to mirror the look and feel of my personal portfolio site, featuring a USF-themed green and gold color scheme.
 
-First, run the development server:
+## How to Run Locally
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository
+   git clone https://github.com/Asce260901/resume-nextjs.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate into the project folder
+   cd resume-nextjs
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Install dependencies
+   npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Start the development server
+   npm run dev
 
-## Learn More
+5. Open your browser and visit http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [x] Next.js App Router project scaffolded with create-next-app
+- [x] All resume content in src/app/page.js using JSX
+- [x] Real, complete resume content — no placeholder text
+- [x] Semantic HTML elements (header, main, section, footer)
+- [x] All styling done with Tailwind CSS utility classes via className
+- [x] Clean, readable layout at desktop viewport
+- [x] Mobile responsive layout using Tailwind sm: breakpoints
+- [x] No console errors
+- [x] Default boilerplate cleaned up
+- [x] Meaningful Git commit history
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Known Issues / Limitations
 
-## Deploy on Vercel
+- USF logo is loaded from an external URL (GitHub Pages) — if that URL changes the image will break
+- No dark mode support
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 16 (App Router)
+- React
+- Tailwind CSS v4
+- JavaScript (JSX)
