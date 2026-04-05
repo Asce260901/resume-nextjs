@@ -4,25 +4,25 @@ export default function Home() {
 
       {/* Header */}
       <header className="bg-green-800 text-white text-center py-12 px-6">
-        <div className="w-24 h-24 mx-auto mb-4">
+        <div className="mx-auto mb-4 flex justify-center">
           <img
             src="https://asce260901.github.io/portfolio-site/Usf Logo Png.jpeg"
             alt="USF Logo"
-            className="w-full h-full object-contain rounded-full"
+            className="w-24 h-24 object-contain rounded-full"
           />
         </div>
-        <h1 className="text-4xl font-bold mb-2">Alejandro Martinez</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-2">Alejandro Martinez</h1>
         <p className="text-sm text-green-100">A.A., Computer Science</p>
         <p className="text-sm text-green-100">Business Analytics and Information Systems</p>
         <p className="text-sm text-green-100">University of South Florida</p>
       </header>
 
       {/* Body */}
-      <div className="max-w-3xl mx-auto px-6 py-10">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
 
         {/* Summary */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-green-800 mb-2">Professional Summary</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Professional Summary</h2>
           <hr className="border-yellow-600 mb-4" />
           <p className="text-sm text-gray-700 leading-relaxed">
             University of South Florida student pursuing a B.S. in Business Analytics & Information Systems with a growing focus
@@ -34,7 +34,7 @@ export default function Home() {
 
         {/* Contact */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-green-800 mb-2">Contact</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Contact</h2>
           <hr className="border-yellow-600 mb-4" />
           <ul className="text-sm text-gray-700 space-y-1">
             <li>Email: <a href="mailto:AJMH2609@gmail.com" className="text-green-700 hover:underline">ajmh2609@gmail.com</a></li>
@@ -47,7 +47,7 @@ export default function Home() {
 
         {/* Technical Skills */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-green-800 mb-2">Technical Skills</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Technical Skills</h2>
           <hr className="border-yellow-600 mb-4" />
           <ul className="text-sm text-gray-700 space-y-1">
             <li><span className="font-bold">Web Development:</span> HTML, CSS, JavaScript, Responsive Web Design, Git, GitHub, GitHub Pages</li>
@@ -59,7 +59,7 @@ export default function Home() {
 
         {/* Projects */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-green-800 mb-2">Projects</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Projects</h2>
           <hr className="border-yellow-600 mb-4" />
 
           <div className="mb-4">
@@ -89,13 +89,13 @@ export default function Home() {
 
         {/* Experience */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-green-800 mb-2">Experience</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Experience</h2>
           <hr className="border-yellow-600 mb-4" />
 
           <div className="mb-4">
-            <div className="flex justify-between items-start">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
               <h3 className="text-sm font-bold text-gray-900">Customer Operations Representative (Airline Services)</h3>
-              <span className="text-xs text-gray-500 whitespace-nowrap ml-4">Jan 2026 – Present</span>
+              <span className="text-xs text-gray-500 sm:whitespace-nowrap sm:ml-4 mt-1 sm:mt-0">Jan 2026 – Present</span>
             </div>
             <p className="text-sm text-gray-600 mb-1">Eulen Aviation, Tampa International Airport, Tampa, FL</p>
             <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
@@ -106,9 +106,9 @@ export default function Home() {
           </div>
 
           <div className="mb-4">
-            <div className="flex justify-between items-start">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
               <h3 className="text-sm font-bold text-gray-900">Operations & Customer Support Lead</h3>
-              <span className="text-xs text-gray-500 whitespace-nowrap ml-4">Nov 2021 – Dec 2025</span>
+              <span className="text-xs text-gray-500 sm:whitespace-nowrap sm:ml-4 mt-1 sm:mt-0">Nov 2021 – Dec 2025</span>
             </div>
             <p className="text-sm text-gray-600 mb-1">Marvis Enterprises Corporation, Tampa, FL</p>
             <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
@@ -123,22 +123,22 @@ export default function Home() {
 
         {/* Education */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-green-800 mb-2">Education</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Education</h2>
           <hr className="border-yellow-600 mb-4" />
 
           <div className="mb-4">
-            <div className="flex justify-between items-start">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
               <h3 className="text-sm font-bold text-gray-900">University of South Florida, Tampa, FL</h3>
-              <span className="text-xs text-gray-500 whitespace-nowrap ml-4">Expected 2026</span>
+              <span className="text-xs text-gray-500 sm:whitespace-nowrap sm:ml-4 mt-1 sm:mt-0">Expected 2026</span>
             </div>
             <p className="text-sm text-gray-700">B.S. Business Analytics & Information Systems, Cybersecurity Concentration</p>
             <p className="text-sm text-gray-600 mt-1"><span className="font-bold">Relevant Coursework:</span> Business Application Development, Systems Analysis & Design, Database Design & Administration, Business Data Communications, Python for Business Analytics, AI & Analytics for Organizations</p>
           </div>
 
           <div>
-            <div className="flex justify-between items-start">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
               <h3 className="text-sm font-bold text-gray-900">Hillsborough Community College, Tampa, FL</h3>
-              <span className="text-xs text-gray-500 whitespace-nowrap ml-4">Completed Aug 2024</span>
+              <span className="text-xs text-gray-500 sm:whitespace-nowrap sm:ml-4 mt-1 sm:mt-0">Completed Aug 2024</span>
             </div>
             <p className="text-sm text-gray-700">A.A., Computer Science Pathway</p>
           </div>
