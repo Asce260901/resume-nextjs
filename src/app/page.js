@@ -31,10 +31,10 @@ export default function Home() {
       </header>
 
       {/* Body */}
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 space-y-6">
 
         {/* Summary */}
-        <section className="mb-8">
+        <section className="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
           <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Professional Summary</h2>
           <hr className="border-yellow-600 mb-4" />
           <p className="text-sm text-gray-700 leading-relaxed">
@@ -46,7 +46,7 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section className="mb-8">
+        <section className="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
           <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Contact</h2>
           <hr className="border-yellow-600 mb-4" />
           <ul className="text-sm text-gray-700 space-y-1">
@@ -59,7 +59,7 @@ export default function Home() {
         </section>
 
         {/* Technical Skills */}
-        <section className="mb-8">
+        <section className="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
           <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Technical Skills</h2>
           <hr className="border-yellow-600 mb-4" />
           <ul className="text-sm text-gray-700 space-y-1">
@@ -71,7 +71,7 @@ export default function Home() {
         </section>
 
         {/* Projects */}
-        <section className="mb-8">
+        <section className="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
           <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Projects</h2>
           <hr className="border-yellow-600 mb-4" />
           <div className="mb-4">
@@ -98,7 +98,7 @@ export default function Home() {
         </section>
 
         {/* Experience */}
-        <section className="mb-8">
+        <section className="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
           <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Experience</h2>
           <hr className="border-yellow-600 mb-4" />
           <div className="mb-4">
@@ -129,7 +129,7 @@ export default function Home() {
         </section>
 
         {/* Education */}
-        <section className="mb-8">
+        <section className="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
           <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Education</h2>
           <hr className="border-yellow-600 mb-4" />
           <div className="mb-4">
