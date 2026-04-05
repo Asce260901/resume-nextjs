@@ -1,9 +1,22 @@
+"use client";
+import { useState, useEffect } from "react";
+
 export default function Home() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setVisible(true), 100);
+  }, []);
+
   return (
     <main className="min-h-screen bg-white text-gray-900">
 
       {/* Header */}
-      <header className="bg-green-800 text-white text-center py-12 px-6">
+      <header
+        className={`bg-green-800 text-white text-center py-12 px-6 transition-all duration-700 ${
+          visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-6"
+        }`}
+      >
         <div className="mx-auto mb-4 flex justify-center">
           <img
             src="https://asce260901.github.io/portfolio-site/Usf Logo Png.jpeg"
@@ -61,7 +74,6 @@ export default function Home() {
         <section className="mb-8">
           <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Projects</h2>
           <hr className="border-yellow-600 mb-4" />
-
           <div className="mb-4">
             <h3 className="text-sm font-bold text-gray-900">Portfolio Website <span className="font-normal text-gray-500">| HTML, CSS, JavaScript, GitHub Pages</span></h3>
             <ul className="list-disc list-inside text-sm text-gray-700 mt-1 space-y-1">
@@ -69,7 +81,6 @@ export default function Home() {
               <li>Organized content and layout for clear navigation and a polished presentation across devices.</li>
             </ul>
           </div>
-
           <div className="mb-4">
             <h3 className="text-sm font-bold text-gray-900">Retail Discount Engine <span className="font-normal text-gray-500">| JavaScript, HTML, CSS</span></h3>
             <ul className="list-disc list-inside text-sm text-gray-700 mt-1 space-y-1">
@@ -77,7 +88,6 @@ export default function Home() {
               <li>Structured the interface and core logic to keep the tool simple to use and easy to update.</li>
             </ul>
           </div>
-
           <div className="mb-4">
             <h3 className="text-sm font-bold text-gray-900">Pricing, Order, and Inventory Workflow Tools <span className="font-normal text-gray-500">| JavaScript, HTML, CSS</span></h3>
             <ul className="list-disc list-inside text-sm text-gray-700 mt-1 space-y-1">
@@ -91,11 +101,10 @@ export default function Home() {
         <section className="mb-8">
           <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Experience</h2>
           <hr className="border-yellow-600 mb-4" />
-
           <div className="mb-4">
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
               <h3 className="text-sm font-bold text-gray-900">Customer Operations Representative (Airline Services)</h3>
-              <span className="text-xs text-gray-500 sm:whitespace-nowrap sm:ml-4 mt-1 sm:mt-0">Jan 2026 – Present</span>
+              <span className="text-xs text-gray-500 mt-1 sm:mt-0 sm:ml-4 sm:whitespace-nowrap">Jan 2026 – Present</span>
             </div>
             <p className="text-sm text-gray-600 mb-1">Eulen Aviation, Tampa International Airport, Tampa, FL</p>
             <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
@@ -104,11 +113,10 @@ export default function Home() {
               <li>Balance competing priorities, document outcomes, and deliver professional service during peak travel periods.</li>
             </ul>
           </div>
-
           <div className="mb-4">
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
               <h3 className="text-sm font-bold text-gray-900">Operations & Customer Support Lead</h3>
-              <span className="text-xs text-gray-500 sm:whitespace-nowrap sm:ml-4 mt-1 sm:mt-0">Nov 2021 – Dec 2025</span>
+              <span className="text-xs text-gray-500 mt-1 sm:mt-0 sm:ml-4 sm:whitespace-nowrap">Nov 2021 – Dec 2025</span>
             </div>
             <p className="text-sm text-gray-600 mb-1">Marvis Enterprises Corporation, Tampa, FL</p>
             <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
@@ -117,7 +125,6 @@ export default function Home() {
               <li>Trained staff on operational processes and contributed to consistent day-to-day execution in a fast-paced setting.</li>
             </ul>
           </div>
-
           <p className="text-sm text-gray-600 italic">Additional Experience: Patio Operations Manager, Vilo Fence | Outside Sales Representative, Miracle Furniture</p>
         </section>
 
@@ -125,20 +132,18 @@ export default function Home() {
         <section className="mb-8">
           <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Education</h2>
           <hr className="border-yellow-600 mb-4" />
-
           <div className="mb-4">
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
               <h3 className="text-sm font-bold text-gray-900">University of South Florida, Tampa, FL</h3>
-              <span className="text-xs text-gray-500 sm:whitespace-nowrap sm:ml-4 mt-1 sm:mt-0">Expected 2026</span>
+              <span className="text-xs text-gray-500 mt-1 sm:mt-0 sm:ml-4 sm:whitespace-nowrap">Expected 2026</span>
             </div>
             <p className="text-sm text-gray-700">B.S. Business Analytics & Information Systems, Cybersecurity Concentration</p>
             <p className="text-sm text-gray-600 mt-1"><span className="font-bold">Relevant Coursework:</span> Business Application Development, Systems Analysis & Design, Database Design & Administration, Business Data Communications, Python for Business Analytics, AI & Analytics for Organizations</p>
           </div>
-
           <div>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
               <h3 className="text-sm font-bold text-gray-900">Hillsborough Community College, Tampa, FL</h3>
-              <span className="text-xs text-gray-500 sm:whitespace-nowrap sm:ml-4 mt-1 sm:mt-0">Completed Aug 2024</span>
+              <span className="text-xs text-gray-500 mt-1 sm:mt-0 sm:ml-4 sm:whitespace-nowrap">Completed Aug 2024</span>
             </div>
             <p className="text-sm text-gray-700">A.A., Computer Science Pathway</p>
           </div>
