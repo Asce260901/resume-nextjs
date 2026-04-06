@@ -26,10 +26,7 @@ export default function Home() {
     <main className="min-h-screen bg-gray-950 text-gray-100">
 
       {/* Scroll Progress Bar */}
-      <div
-        className="fixed top-0 left-0 h-0.5 bg-green-400 z-50 transition-all duration-100"
-        style={{ width: `${scrollProgress}%` }}
-      />
+      <div className="fixed top-0 left-0 h-0.5 bg-green-400 z-50 transition-all duration-100" style={{ width: `${scrollProgress}%` }} />
 
       {/* Header */}
       <header className={`relative bg-gray-900 border-b border-green-500/20 text-center py-16 px-6 overflow-hidden transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-6"}`}>
@@ -213,6 +210,16 @@ export default function Home() {
       <footer className="border-t border-green-500/20 bg-gray-950 text-center py-6 font-mono text-xs text-green-500/70">
         © 2026 Alejandro Martinez | University of South Florida
       </footer>
+
+      {/* Back to Top */}
+      {scrollProgress > 10 && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="fixed bottom-6 right-6 z-50 font-mono text-xs px-4 py-2 bg-gray-900 border border-green-500/50 text-green-400 hover:bg-green-500/10 hover:border-green-400 rounded transition-all duration-200"
+        >
+          ^ Top
+        </button>
+      )}
 
     </main>
   );
