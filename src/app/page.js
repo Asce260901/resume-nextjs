@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
   const [expanded, setExpanded] = useState({
     summary: true, contact: true, skills: true,
     projects: true, experience: true, education: true,
@@ -13,10 +14,22 @@ export default function Home() {
 
   useEffect(() => {
     setTimeout(() => setVisible(true), 100);
+    const handleScroll = () => {
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      setScrollProgress((window.scrollY / total) * 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <main className="min-h-screen bg-gray-950 text-gray-100">
+
+      {/* Scroll Progress Bar */}
+      <div
+        className="fixed top-0 left-0 h-0.5 bg-green-400 z-50 transition-all duration-100"
+        style={{ width: `${scrollProgress}%` }}
+      />
 
       {/* Header */}
       <header className={`relative bg-gray-900 border-b border-green-500/20 text-center py-16 px-6 overflow-hidden transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-6"}`}>
