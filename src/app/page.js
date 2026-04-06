@@ -38,6 +38,7 @@ export default function Home() {
           <a href="https://asce260901.github.io/portfolio-site/" target="_blank" rel="noopener noreferrer" className="font-mono text-xs px-4 py-2 border border-green-500/50 text-green-400 hover:bg-green-500/10 hover:border-green-400 rounded transition-all duration-200 tracking-wider">Portfolio</a>
           <a href="https://github.com/Asce260901" target="_blank" rel="noopener noreferrer" className="font-mono text-xs px-4 py-2 border border-green-500/50 text-green-400 hover:bg-green-500/10 hover:border-green-400 rounded transition-all duration-200 tracking-wider">GitHub</a>
           <a href="mailto:AJMH2609@gmail.com" className="font-mono text-xs px-4 py-2 border border-green-500/50 text-green-400 hover:bg-green-500/10 hover:border-green-400 rounded transition-all duration-200 tracking-wider">Contact Me</a>
+          <a href="/Alejandro_Martinez_Resume_Web_Developing.pdf" download className="font-mono text-xs px-4 py-2 bg-yellow-500/20 border border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/30 hover:border-yellow-400 rounded transition-all duration-200 tracking-wider">Download Resume</a>
         </div>
       </header>
 
@@ -196,7 +197,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="border-t border-green-500/20 bg-gray-950 text-center py-6 font-mono text-xs text-gray-600">
+      <footer className="border-t border-green-500/20 bg-gray-950 text-center py-6 font-mono text-xs text-green-500/70">
         © 2026 Alejandro Martinez | University of South Florida
       </footer>
 
