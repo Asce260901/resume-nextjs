@@ -12,6 +12,8 @@ export default function Home() {
   const sectionRefs = useRef({});
 
   const toggle = (id) => setExpanded((prev) => ({ ...prev, [id]: !prev[id] }));
+  const expandAll = () => setExpanded({ summary: true, contact: true, skills: true, projects: true, experience: true, education: true });
+  const collapseAll = () => setExpanded({ summary: false, contact: false, skills: false, projects: false, experience: false, education: false });
 
   useEffect(() => {
     setTimeout(() => setVisible(true), 100);
@@ -46,10 +48,7 @@ export default function Home() {
 
         {/* Dark mode toggle */}
         <div className="absolute top-4 right-4">
-          <button
-            onClick={() => setDark(!dark)}
-            className="font-mono text-xs px-3 py-1 border border-green-500/50 text-green-400 hover:bg-green-500/10 rounded transition-all duration-200"
-          >{dark ? "[ light ]" : "[ dark ]"}</button>
+          <button onClick={() => setDark(!dark)} className="font-mono text-xs px-3 py-1 border border-green-500/50 text-green-400 hover:bg-green-500/10 rounded transition-all duration-200">{dark ? "[ light ]" : "[ dark ]"}</button>
         </div>
 
         <div className="relative mx-auto mb-6 flex justify-center">
@@ -64,6 +63,8 @@ export default function Home() {
         <p className={`${mutedText} font-mono text-xs mt-1`}>University of South Florida — Cybersecurity Concentration</p>
 
         <div className="flex justify-center gap-3 mt-6 flex-wrap">
+          <button onClick={expandAll} className="font-mono text-xs px-4 py-2 border border-green-500/50 text-green-400 hover:bg-green-500/10 hover:border-green-400 rounded transition-all duration-200 tracking-wider">Expand All</button>
+          <button onClick={collapseAll} className="font-mono text-xs px-4 py-2 border border-green-500/50 text-green-400 hover:bg-green-500/10 hover:border-green-400 rounded transition-all duration-200 tracking-wider">Collapse All</button>
           <a href="https://asce260901.github.io/portfolio-site/" target="_blank" rel="noopener noreferrer" className="font-mono text-xs px-4 py-2 border border-green-500/50 text-green-400 hover:bg-green-500/10 hover:border-green-400 rounded transition-all duration-200 tracking-wider">Portfolio</a>
           <a href="https://github.com/Asce260901" target="_blank" rel="noopener noreferrer" className="font-mono text-xs px-4 py-2 border border-green-500/50 text-green-400 hover:bg-green-500/10 hover:border-green-400 rounded transition-all duration-200 tracking-wider">GitHub</a>
           <a href="mailto:AJMH2609@gmail.com" className="font-mono text-xs px-4 py-2 border border-green-500/50 text-green-400 hover:bg-green-500/10 hover:border-green-400 rounded transition-all duration-200 tracking-wider">Contact Me</a>
