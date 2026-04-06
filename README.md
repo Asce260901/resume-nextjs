@@ -1,6 +1,6 @@
-# Alejandro Martinez | Resume
+# Alejandro Martinez | Web Developer Resume
 
-A single-page resume website built with Next.js (App Router) and styled with Tailwind CSS utility classes. Designed to mirror the look and feel of my personal portfolio site, featuring a USF-themed green and gold color scheme.
+A single-page interactive resume built with Next.js (App Router) and styled with Tailwind CSS. Inspired by my personal portfolio site, featuring a cyberpunk-themed dark UI with neon green accents and a full suite of interactive features.
 
 ## How to Run Locally
 
@@ -25,16 +25,25 @@ A single-page resume website built with Next.js (App Router) and styled with Tai
 - [x] Real, complete resume content — no placeholder text
 - [x] Semantic HTML elements (header, main, section, footer)
 - [x] All styling done with Tailwind CSS utility classes via className
-- [x] Clean, readable layout at desktop viewport
+- [x] Cyberpunk dark theme with neon green and gold accents
+- [x] USF logo in header with gradient ring
+- [x] Animated header on page load
+- [x] Hover effects on all resume sections
+- [x] Expandable / collapsible sections
+- [x] Expand All / Collapse All buttons
+- [x] Scroll progress bar
+- [x] Back to top button
+- [x] Dark / Light mode toggle
+- [x] Download Resume button
+- [x] Grid layout for desktop, stacked on mobile
 - [x] Mobile responsive layout using Tailwind sm: breakpoints
 - [x] No console errors
-- [x] Default boilerplate cleaned up
 - [x] Meaningful Git commit history
 
 ## Known Issues / Limitations
 
-- USF logo is loaded from an external URL (GitHub Pages) — if that URL changes the image will break
-- No dark mode support
+- USF logo loaded from external GitHub Pages URL — may break if that URL changes
+- Dark mode preference is not saved between sessions
 
 ## Tech Stack
 
